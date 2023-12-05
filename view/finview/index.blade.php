@@ -1,109 +1,21 @@
 @extends('layout')
-@section('seo')
-    <!-- #favicon -->
-    <link rel="shortcut icon" href="assets/finview/images/favicon.png" type="image/x-icon">
-    <!-- #title -->
-    <title>{{$seo["title"]}}</title>
-    <!-- #keywords -->
-    <meta name="keywords" content="FINVIEW, Financial Loan, Financial Loan Review and Comparison">
-    <!-- #description -->
-    <meta name="description" content="FINVIEW HTML5 Template">
-@endsection
 @section('content')
-    <form action="hash/login" method="POST">
-        @token('girisForm',300)
-        <input type="text" class="form-control" name="demo">
-    </form>
-    <!-- Offcanvas More info-->
-    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
-        <div class="offcanvas-body custom-nevbar">
-            <div class="row">
-                <div class="col-md-7 col-xl-8">
-                    <div class="custom-nevbar__left">
-                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                        <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
-                                    <li><a class="dropdown-item" href="service.html">service</a></li>
-                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
-                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="contact.html">contact us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="sign-in.html">sign in</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-5 col-xl-4">
-                    <div class="custom-nevbar__right">
-                        <div class="custom-nevbar__top d-none d-md-block">
-                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                            <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
-                            </div>
-                        </div>
-                        <ul class="custom-nevbar__right-location">
-                            <li>
-                                <p class="mb-2">Phone: </p>
-                                <a href="tel:+123456789" class="fs-4 contact">+123 456 789</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Email: </p>
-                                <a href="mailto:Info@gmail.com" class="fs-4 contact">Info@gmail.com</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Location: </p>
-                                <p class="fs-4 contact">6391 Celina, Delaware 10299</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header-section end -->
+
 
     <!-- Hero Section Start -->
     <section class="hero">
         <div class="hero__animation">
-            <img src="assets/images/hero_vector_dollar.png" alt="Image">
-            <img src="assets/images/hero_vector_message.png" alt="Image">
-            <img src="assets/images/hero_vector_dollar.png" alt="Image">
-            <img src="assets/images/hero_vector_setting.png" alt="Image">
-            <img src="assets/images/hero_vector_arrow.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_dollar.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_message.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_dollar.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_setting.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_arrow.png" alt="Image">
         </div>
         <div class="container">
             <div class="row gy-5 gy-lg-0 align-items-center justify-content-between">
                 <div class="col-12 col-lg-6">
                     <div class="section__content">
-                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector"> Compare and Choose the Best Loan</span>
+                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector"> Compare and Choose the Best Loan</span>
                         <h1 class="section__content-title display-3 wow fadeInUp" data-wow-duration="0.8s">Find the
                             <span class="word d-inline-flex">
                                 <span data-wow-duration="0.6s" class="letter wow fadeInDown">P</span>
@@ -125,7 +37,7 @@
                 </div>
                 <div class="col-12 col-lg-6 col-xxl-5">
                     <div class="hero__thumb wow fadeInUp" data-wow-duration="0.8s">
-                        <img src="assets/images/hero_img.png" alt="Image">
+                        <img src="assets/finview/images/hero_img.png" alt="Image">
                     </div>
                 </div>
             </div>
@@ -136,14 +48,14 @@
     <!-- feature start -->
     <section class="feature section">
         <div class="animation">
-            <img src="assets/images/hero_vector_dollar.png" alt="Image">
-            <img src="assets/images/hero_vector_message.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_dollar.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_message.png" alt="Image">
         </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-9 col-xxl-8">
                     <div class="section__header">
-                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector"> Featured Services</span>
+                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector"> Featured Services</span>
                         <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">Empowering You with Loan Knowledge and Comparison Tools</h2>
                         <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s">We are dedicated to providing you with valuable services that simplify your loan search and empower you to make informed borrowing decisions. Our comprehensive range of services</p>
                     </div>
@@ -234,19 +146,19 @@
     <!-- Choose Us start -->
     <section class="choose-us ">
         <div class="animation">
-            <img src="assets/images/hero_vector_arrow.png" alt="Image">
-            <img src="assets/images/choose_vector.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_arrow.png" alt="Image">
+            <img src="assets/finview/images/choose_vector.png" alt="Image">
         </div>
         <div class="container">
             <div class="row gy-5 gy-lg-0 justify-content-between align-items-center section">
                 <div class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0 order-1 order-lg-0">
                     <div class="choose-us__thumb me-xl-4 me-xxl-0 wow fadeInUp" data-wow-duration="0.8s">
-                        <img src="assets/images/choose_us.png" alt="images">
+                        <img src="assets/finview/images/choose_us.png" alt="images">
                     </div>
                 </div>
                 <div class="col-12 col-lg-7 col-xxl-6">
                     <div class="section__content ms-lg-4 ms-xl-0">
-                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector"> Why Choose Us</span>
+                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector"> Why Choose Us</span>
                         <h2 class="section__content-title wow fadeInUp" data-wow-duration="0.8s">Experience Excellence in Loan Review and Comparison</h2>
                         <p class="section__content-text wow fadeInDown" data-wow-duration="0.8s">Our dedicated team of experts conducts thorough research and analysis to provide you with comprehensive and unbiased reviews of various loan options.</p>
                         <div class="section__content-inner wow fadeInUp" data-wow-duration="0.8s">
@@ -267,7 +179,7 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-lg-10 col-xxl-9">
                                 <div class="section__header">
-                                    <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Loan Reviews</span>
+                                    <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector">Loan Reviews</span>
                                     <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">In-depth Analysis for Informed Borrowing Decisions</h2>
                                     <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s">Welcome to our comprehensive loan reviews section, where we provide you with detailed and unbiased analyses of various loan options.</p>
                                 </div>
@@ -279,7 +191,7 @@
                                     <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s">
                                         <div class="loan-reviews__part-one">
                                             <div class="loan-reviews__thumb">
-                                                <img src="assets/images/loan_reviews_logo.png" alt="image">
+                                                <img src="assets/finview/images/loan_reviews_logo.png" alt="image">
                                             </div>
                                             <div class="loan-reviews__review">
                                                 <p class="rating"> 4.9</p>
@@ -320,7 +232,7 @@
                                     <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s">
                                         <div class="loan-reviews__part-one">
                                             <div class="loan-reviews__thumb">
-                                                <img src="assets/images/loan_reviews_logo2.png" alt="image">
+                                                <img src="assets/finview/images/loan_reviews_logo2.png" alt="image">
                                             </div>
                                             <div class="loan-reviews__review">
                                                 <p class="rating"> 4.9</p>
@@ -361,7 +273,7 @@
                                     <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s">
                                         <div class="loan-reviews__part-one">
                                             <div class="loan-reviews__thumb">
-                                                <img src="assets/images/loan_reviews_logo3.png" alt="image">
+                                                <img src="assets/finview/images/loan_reviews_logo3.png" alt="image">
                                             </div>
                                             <div class="loan-reviews__review">
                                                 <p class="rating"> 4.9</p>
@@ -402,7 +314,7 @@
                                     <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s">
                                         <div class="loan-reviews__part-one">
                                             <div class="loan-reviews__thumb">
-                                                <img src="assets/images/loan_reviews_logo4.png" alt="image">
+                                                <img src="assets/finview/images/loan_reviews_logo4.png" alt="image">
                                             </div>
                                             <div class="loan-reviews__review">
                                                 <p class="rating"> 4.9</p>
@@ -461,7 +373,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6 col-xxl-5">
                     <div class="section__header">
-                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Our Working Process</span>
+                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector">Our Working Process</span>
                         <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">Simplified Steps to Find Your Ideal Loan</h2>
                         <p class="section__header-content ch-xxl wow fadeInDown" data-wow-duration="0.8s">Our working process is designed to make your loan search and selection as seamless as possible.</p>
                     </div>
@@ -559,14 +471,14 @@
     <!-- About Us start -->
     <section class="about-us section">
         <div class="animation">
-            <img src="assets/images/hero_vector_dollar.png" alt="Image">
-            <img src="assets/images/hero_vector_message.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_dollar.png" alt="Image">
+            <img src="assets/finview/images/hero_vector_message.png" alt="Image">
         </div>
         <div class="container">
             <div class="row gy-5 gy-lg-0 justify-content-between align-items-center">
                 <div class="col-12 col-lg-7 col-xxl-6">
                     <div class="section__content ms-lg-4 ms-xl-0">
-                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector"> About Us</span>
+                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector"> About Us</span>
                         <h2 class="section__content-title wow fadeInUp" data-wow-duration="0.8s">Your Trusted Source for Loan Reviews and Comparison</h2>
                         <p class="section__content-text wow fadeInDown" data-wow-duration="0.8s">We are dedicated to providing you with a reliable and user-friendly platform for loan reviews and comparison. With a mission to simplify the loan selection</p>
                         <div class="section__content-inner">
@@ -655,7 +567,7 @@
                 </div>
                 <div class="col-12 col-md-8 col-lg-5 mx-auto mx-lg-0">
                     <div class="choose-us__thumb unset-xxl me-xl-4 me-xxl-0 wow fadeInDown" data-wow-duration="0.8s">
-                        <img src="assets/images/about_us.png" alt="images">
+                        <img src="assets/finview/images/about_us.png" alt="images">
                     </div>
                 </div>
             </div>
@@ -761,7 +673,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="section__content ms-lg-4 ms-xxl-0">
-                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector"> Loan Calculators</span>
+                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector"> Loan Calculators</span>
                         <h2 class="section__content-title wow fadeInUp" data-wow-duration="0.8s">Empower Yourself with Accurate Loan Estimates</h2>
                         <p class="section__content-text wow fadeInDown" data-wow-duration="0.8s">Our loan calculators are powerful tools designed to assist you in making informed financial decisions. Whether you're planning a major purchase, estimating monthly payments</p>
                         <ul class="section__content-list wow fadeInUp" data-wow-duration="0.8s">
@@ -784,7 +696,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-6 col-xxl-5">
                     <div class="section__header">
-                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Client Testimonials</span>
+                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector">Client Testimonials</span>
                         <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">Success Stories Shared by Our Customers</h2>
                         <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s">Feel free to customize the text with actual client testimonials, ensuring you have their permission to use their names and occupations</p>
                     </div>
@@ -806,7 +718,7 @@
                             </div>
                             <div class="testimonials__author">
                                 <div class="author__thumg">
-                                    <img src="assets/images/testimonials.png" alt="">
+                                    <img src="assets/finview/images/testimonials.png" alt="">
                                 </div>
                                 <div class="author__content">
                                     <h5 class="author__title">Balogh Imre</h5>
@@ -827,7 +739,7 @@
                             </div>
                             <div class="testimonials__author">
                                 <div class="author__thumg">
-                                    <img src="assets/images/testimonials2.png" alt="">
+                                    <img src="assets/finview/images/testimonials2.png" alt="">
                                 </div>
                                 <div class="author__content">
                                     <h5 class="author__title">Kende Attila</h5>
@@ -848,7 +760,7 @@
                             </div>
                             <div class="testimonials__author">
                                 <div class="author__thumg">
-                                    <img src="assets/images/testimonials3.png" alt="">
+                                    <img src="assets/finview/images/testimonials3.png" alt="">
                                 </div>
                                 <div class="author__content">
                                     <h5 class="author__title">Eleanor Pena</h5>
@@ -882,12 +794,12 @@
             <div class="row justify-content-center justify-content-lg-between align-items-center gy-5 gy-lg-0">
                 <div class="col-12 col-md-8 col-lg-5 order-1 order-lg-0">
                     <div class="download-app__thumb me-lg-5 me-xxl-0  wow fadeInDown" data-wow-duration="0.8s">
-                        <img src="assets/images/download_app.png" alt="images">
+                        <img src="assets/finview/images/download_app.png" alt="images">
                     </div>
                 </div>
                 <div class="col-12 col-lg-7 col-xxl-6">
                     <div class="section__content ms-lg-4 ms-xl-0">
-                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Download Our Apps</span>
+                        <span class="section__content-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector">Download Our Apps</span>
                         <h2 class="section__content-title wow fadeInUp" data-wow-duration="0.8s">Get Our Apps for Easy Financial Management</h2>
                         <p class="section__content-text wow fadeInDown" data-wow-duration="0.8s">Take advantage of our convenient mobile apps to access our services anytime, anywhere. Download our apps today and experience the ease of managing your finances</p>
                         <ul class="section__content-list wow fadeInUp" data-wow-duration="0.8s">
@@ -950,7 +862,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-7 col-xxl-6">
                     <div class="section__header">
-                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/images/title_vector.png" alt="vector">Frequently Asked Questions</span>
+                        <span class="section__header-sub-title headingFour wow fadeInDown" data-wow-duration="0.8s"><img src="assets/finview/images/title_vector.png" alt="vector">Frequently Asked Questions</span>
                         <h2 class="section__header-title wow fadeInUp" data-wow-duration="0.8s">Find Answers to Common Questions</h2>
                         <p class="section__header-content wow fadeInDown" data-wow-duration="0.8s">We've compiled a list of frequently asked questions to provide you with quick and helpful answers. If you have a question that is not addressed below</p>
                     </div>
