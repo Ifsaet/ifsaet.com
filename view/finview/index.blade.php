@@ -1,94 +1,10 @@
 @extends('layout')
-@section('seo')
-    <!-- #favicon -->
-    <link rel="shortcut icon" href="assets/finview/images/favicon.png" type="image/x-icon">
-    <!-- #title -->
-    <title>{{$seo["title"]}}</title>
-    <!-- #keywords -->
-    <meta name="keywords" content="FINVIEW, Financial Loan, Financial Loan Review and Comparison">
-    <!-- #description -->
-    <meta name="description" content="FINVIEW HTML5 Template">
-@endsection
 @section('content')
     <form action="hash/login" method="POST">
         @token('girisForm',300)
         <input type="text" class="form-control" name="demo">
     </form>
-    <!-- Offcanvas More info-->
-    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
-        <div class="offcanvas-body custom-nevbar">
-            <div class="row">
-                <div class="col-md-7 col-xl-8">
-                    <div class="custom-nevbar__left">
-                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                        <ul class="custom-nevbar__nav mb-lg-0">
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Home </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home One</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
-                                    <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Loan Comparison</a>
-                            </li>
-                            <li class="menu_item dropdown">
-                                <a class="menu_link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="about.html">about us</a></li>
-                                    <li><a class="dropdown-item" href="service.html">service</a></li>
-                                    <li><a class="dropdown-item" href="service-details.html">service details</a></li>
-                                    <li><a class="dropdown-item" href="blog.html">blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">blog Details</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="sign-up.html">sign up</a></li>
-                                    <li><a class="dropdown-item" href="error.html">404 Error Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="contact.html">contact us</a>
-                            </li>
-                            <li class="menu_item">
-                                <a class="menu_link" href="sign-in.html">sign in</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-5 col-xl-4">
-                    <div class="custom-nevbar__right">
-                        <div class="custom-nevbar__top d-none d-md-block">
-                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
-                            <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
-                            </div>
-                        </div>
-                        <ul class="custom-nevbar__right-location">
-                            <li>
-                                <p class="mb-2">Phone: </p>
-                                <a href="tel:+123456789" class="fs-4 contact">+123 456 789</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Email: </p>
-                                <a href="mailto:Info@gmail.com" class="fs-4 contact">Info@gmail.com</a>
-                            </li>
-                            <li class="location">
-                                <p class="mb-2">Location: </p>
-                                <p class="fs-4 contact">6391 Celina, Delaware 10299</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header-section end -->
+
 
     <!-- Hero Section Start -->
     <section class="hero">
