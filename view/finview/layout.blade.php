@@ -1,40 +1,23 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <!-- required meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- #favicon -->
         <link rel="shortcut icon" href="assets/finview/images/favicon.png" type="image/x-icon">
-        <!-- #title -->
         <title>{{$seo["title"]}}</title>
-        <!-- #keywords -->
         <meta name="keywords" content="FINVIEW, Financial Loan, Financial Loan Review and Comparison">
-        <!-- #description -->
         <meta name="description" content="FINVIEW HTML5 Template">
-    <!--  css dependencies start  -->
-    <!-- bootstrap five css -->
     <link rel="stylesheet" href="assets/finview/vendor/bootstrap/css/bootstrap.min.css">
-    <!-- bootstrap-icons css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- nice select css -->
     <link rel="stylesheet" href="assets/finview/vendor/nice-select/css/nice-select.css">
-    <!-- magnific popup css -->
     <link rel="stylesheet" href="assets/finview/vendor/magnific-popup/css/magnific-popup.css">
-    <!-- slick css -->
     <link rel="stylesheet" href="assets/finview/vendor/slick/css/slick.css">
-    <!-- odometer css -->
     <link rel="stylesheet" href="assets/finview/vendor/odometer/css/odometer.css">
-    <!-- animate css -->
     <link rel="stylesheet" href="assets/finview/vendor/animate/animate.css">
-    <!-- css dependencies end  -->
-
-    <!-- main css -->
     <link rel="stylesheet" href="assets/finview/css/style.css">
 </head>
 <body>
-<!--  Preloader  -->
 <div class="preloader">
     <span class="loader"></span>
 </div>
@@ -59,14 +42,14 @@
                                         <li><a class="dropdown-item" href="index.html">Home One</a></li>
                                         <li><a class="dropdown-item" href="index-2.html">Home Two</a></li>
                                     </ul>
-                                </li>
+                                </li> 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Loan Reviews </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="loan-reviews.html">Loan Reviews</a></li>
                                         <li><a class="dropdown-item" href="loan-reviews-details.html">Loan Reviews Details</a></li>
                                     </ul>
-                                </li>
+                                </li> 
                                 <li class="nav-item">
                                     <a class="nav-link" href="loan-comparison.html">Loan Comparison</a>
                                 </li>
@@ -89,7 +72,7 @@
                             </ul>
                             <div class="nav-right d-none d-xl-block">
                                 <div class="nav-right__search">
-                                    <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white"> <i class="bi bi-search"></i> <span></span> </a>
+                                    <a href="javascript:void(0)" class="nav-right__search-icon btn_theme icon_box btn_bg_white"> <i class="bi bi-search"></i> <span></span> </a>    
                                     <a href="sign-in.html" class="btn_theme btn_theme_active">Sign In <i class="bi bi-arrow-up-right"></i><span></span></a>
                                 </div>
                                 <div class="nav-right__search-inner">
@@ -110,7 +93,6 @@
         </div>
     </div>
 </header>
-    <!-- Offcanvas More info-->
     <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-body custom-nevbar">
             <div class="row">
@@ -162,7 +144,7 @@
                         <div class="custom-nevbar__top d-none d-md-block">
                             <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
                             <div class="custom-nevbar__right-thumb mb-auto">
-                                <img src="assets/images/logo.png" alt="logo">
+                                <img src="assets/finview/images/logo.png" alt="logo">
                             </div>
                         </div>
                         <ul class="custom-nevbar__right-location">
@@ -184,7 +166,6 @@
             </div>
         </div>
     </div>
-    <!-- header-section end -->
 @yield('content')
 <!-- Footer Area Start -->
 <footer class="footer footer-secondary">
