@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/core.php";
+require_once __DIR__."/../pagenation.php";
 class kategoridetay
 {
     var $config;
@@ -26,7 +27,7 @@ class kategoridetay
     {
         $this->data["config"] = $this->config->push()["config"];
         $this->data["seo"] = $this->pageSeo();
-        $this->data["brand"] = $this->kategoriList();
+        $this->data["brand"] = new Pagination($this->kategoriList(),10);
         $this->data["info"] = $this->kategoriInfo();
         return $this->data;
     }

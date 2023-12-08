@@ -1,3 +1,4 @@
+<base href="http://verysoft/ifsa/">
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -23,7 +24,12 @@
     <link rel="stylesheet" href="assets/finview/vendor/odometer/css/odometer.css">
     <link rel="stylesheet" href="assets/finview/vendor/animate/animate.css">
     <link rel="stylesheet" href="assets/finview/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+    @yield('addHead')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
 <body>
@@ -39,7 +45,7 @@
                     <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <i class="bi bi-list"></i>
                     </a>
-                    <div class="collapse navbar-collapse" id="navbar-content">
+                    <div class="collapse navbar-collapse ms-auto " id="navbar-content">
                         <div class="main-menu index-page">
                             <ul class="navbar-nav mb-lg-0 d-flex align-items-center" style="">
                                 <li class="nav-item">
@@ -88,6 +94,10 @@
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">İfşalar</a>
                             </li>
+                            @php
+                            echo "<pre>";
+                                print_r($_SESSION);
+                             @endphp
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">Markalar</a>
                             </li>
@@ -160,5 +170,8 @@
 <script src="assets/finview/vendor/jquery-validate/jquery.validate.min.js"></script>
 <script src="assets/finview/js/plugins.js"></script>
 <script src="assets/finview/js/main.js"></script>
+<script src="view/global.js"></script>
+@yield('addFooter')
+
 </body>
 </html>

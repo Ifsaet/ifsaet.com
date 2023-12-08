@@ -2,7 +2,7 @@
 require_once __DIR__ . "/core.php";
 class marka
 {
-    var $config;
+    var $config,$pagenation;
     var $data = array();
     function __construct()
     {

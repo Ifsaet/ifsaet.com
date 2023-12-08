@@ -69,6 +69,7 @@ class engine
         $this->parseToken();
         $this->parseComponent();
         $this->parseToken();
+        $this->parseForLoop();
     }
     public function parseIfBlocks()
     {
@@ -102,6 +103,14 @@ class engine
             return '<?php foreach(' . $expression[1] . '): ?>';
         }, $this->view);
         $this->view = preg_replace('/@endforeach/', '<?php endforeach;?>', $this->view);
+    }
+    public function parseForLoop()
+    {
+        $this->view = preg_replace_callback('/@for\(([^)]*)\)/', function ($matches) {
+            return '<?php for(' . $matches[1] . '): ?>';
+        }, $this->view);
+
+        $this->view = preg_replace('/@endfor/', '<?php endfor; ?>', $this->view);
     }
 
     public function parseComponent()
@@ -155,7 +164,7 @@ class engine
                 $timeoutInSeconds = isset($matches[2]) ? (int) $matches[2] : 300;
                 $this->generateToken($sessionKey, $timeoutInSeconds);
                 $tokenValue = $_SESSION[$sessionKey]['token'] ?? '';
-                return '<input type="hidden" name="' . $sessionKey . '" value="' . $tokenValue . '">';
+                return '<input id="token" type="hidden" name="' . $sessionKey . '" value="' . $tokenValue . '">';
             },
             $this->view
         );
@@ -196,10 +205,8 @@ class engine
     }
     public function parsePhp()
     {
-        $this->view = preg_replace_callback('/@php(.*?)@endphp/s', function ($phpCode) {
-            ob_start();
-            eval(trim($phpCode[1]));
-            return ob_get_clean();
+        $this->view = preg_replace_callback('/@php\s*(.*?)\s*@endphp/s', function ($phpCode) {
+            return '<?php ' . trim($phpCode[1]) . ' ?>';
         }, $this->view);
     }
     public function cacheClear()
