@@ -4,34 +4,33 @@
 
 <!-- Slider Alanı -->
 <section class="hero">
-        <div class="container">
-            <div class="row gy-5 gy-lg-0 align-items-center justify-content-between">
-                <div class="col-12 col-lg-6">
-                    <div class="section__content">
-                        <h1 style="color:#1f2130 !important;" class="section__content-title display-3 wow fadeInUp" data-wow-duration="0.8s">Markaları Keşfedin ve Yorumlayın!
-                        </h1>
-                            <input class="form-control custom-input" style="width: 100%;" type="text" placeholder="Aradığın Kurum/Markayı Bul">
+    <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-center justify-content-between">
+            <div class="col-12 col-lg-6">
+                <div class="section__content">
+                    <h1 style="color:#1f2130 !important;" class="section__content-title display-3 wow fadeInUp" data-wow-duration="0.8s">Markaları Keşfedin ve Yorumlayın!
+                    </h1>
+                    <input class="form-control custom-input" style="width: 100%;" type="text" placeholder="Aradığın Kurum/Markayı Bul">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-5 mt-5">
-                    <div class="hero__thumb wow fadeInUp" data-wow-duration="0.8s">
-                        <h1 style="color:#1f2130 !important; font-size: 48px; !important">Hızlı Çözüm İçin <br>İfşa Et</h1>
-                        <div class="input-single" style="margin-top: 40px !important;">
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-5 mt-5">
+                <div class="hero__thumb wow fadeInUp" data-wow-duration="0.8s">
+                    <h1 style="color:#1f2130 !important; font-size: 48px;">Hızlı Çözüm İçin <br>İfşa Et</h1>
+                    <div class="input-single" style="margin-top: 40px;">
                         <div style="display: grid; grid-template-columns: 1fr auto;">
                             <label class="label" for="message">İfşa Detayı</label>
-                            <div style="display: grid; grid-template-columns: 1fr auto;
-                            align-items: center;">
+                            <div style="display: grid; grid-template-columns: 1fr auto; align-items: center;">
                                 <label style="z-index:9;" class="label"><a target="blank" href="https://www.youtube.com/watch?v=XZPezAinMo4&embeds_referring_euri=https%3A%2F%2Fwww.ifsaet.com%2F&source_ve_path=MjM4NTE&feature=emb_title&ab_channel=%C4%B0f%C5%9FaEt">Nasıl Yazılır?</a></label>
                                 <a target="blank" href="https://www.youtube.com/watch?v=XZPezAinMo4&embeds_referring_euri=https%3A%2F%2Fwww.ifsaet.com%2F&source_ve_path=MjM4NTE&feature=emb_title&ab_channel=%C4%B0f%C5%9FaEt" class="btn_theme social_box"><i class="bi bi-youtube"></i><span></span></a>
-                              </div>
-
+                            </div>
                         </div>
-                            <textarea style="z-index: 9;" class="form-control" id="message" name="message" rows="8" placeholder="Ürün veya hizmetle ilgili nasıl bir sorun yaşadınız?" required></textarea>
-                            <button type="submit" class="btn_theme btn_theme_active mt-3 " name="gonder" id="submit">Devam Et<i class="bi bi-arrow-up-right"></i><span></span></button>
-                        </div>
+                        <textarea style="z-index: 9;" class="form-control" id="message" name="message" rows="8" placeholder="Ürün veya hizmetle ilgili nasıl bir sorun yaşadınız?" required></textarea>
+                        <button type="submit" class="btn_theme btn_theme_active mt-3 " name="gonder" id="submit">Devam Et<i class="bi bi-arrow-up-right"></i><span></span></button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </section>
 <!-- Slider Alanı -->
 
