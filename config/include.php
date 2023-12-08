@@ -15,6 +15,8 @@ require_once __DIR__ . "/../controller/pages/marka.php";
 require_once __DIR__ . "/../controller/pages/marka-detay.php";
 require_once __DIR__ . "/../controller/pages/kategori.php";
 require_once __DIR__ . "/../controller/pages/kategoridetay.php";
+require_once __DIR__ . "/../controller/pages/girisyap.php";
+require_once __DIR__ . "/../controller/pages/maildogrulama.php";
 $ROUTE = new engine([
     'views' => __DIR__ . '/../view/finview',
     'cache' => __DIR__ . '/../storage/cache/finview',
