@@ -133,7 +133,6 @@ class core extends db
             }
         }
     }
-
     public function tl($total, $carpan = true, $birim = null)
     {
         if ($carpan != false) {
@@ -155,17 +154,9 @@ class core extends db
     }
     public function guvenlik($post)
     {
-        $eski = array("&nbsp;");
-        $yeni = array("");
-        if (!empty($post)):
-            $post = strip_tags($post);
-            $post = htmlspecialchars($post);
-            $post = str_replace($eski, $yeni, $post);
-            return $post;
-        else:
-            $post = str_replace($eski, $yeni, $post);
-            return $post;
-        endif;
+        $post = strip_tags($post);
+        $post = htmlspecialchars($post);
+        return $post;
     }
     public function seo($s)
     {

@@ -1,9 +1,8 @@
 <?php
 require_once __DIR__ . "/core.php";
-require_once __DIR__."/../pagenation.php";
-class kategori
+class login
 {
-    var $config,$pgnation;
+    var $config;
     var $data = array();
     function __construct()
     {
@@ -12,7 +11,7 @@ class kategori
     public function pageSeo()
     {
         $request = array();
-        $request["title"] = "Kategoriler - İfşa et";
+        $request["title"] = "Giriş Yap";
         $request["description"] = "İfşa et ile sosyal medya hesaplarınızı güvenli bir şekilde paylaşabilirsiniz.";
         $request["keywords"] = "ifşa et, ifşa, ifşa et";
         $request["canonical"] = "https://ifsaet.com/";
@@ -25,19 +24,7 @@ class kategori
     {
         $this->data["config"] = $this->config->push()["config"];
         $this->data["seo"] = $this->pageSeo();
-        $this->data["kategori"] = new Pagination($this->kategoriList(),10);
-
         return $this->data;
     }
-    public function kategoriList()
-    {
-        $location = "tr";
-        $kategori = $this->config->core->VeriGetir("category", "durum=? AND location=?", array("1", $location));
-        if ($kategori != false) {
-            return $kategori;
-        } else {
-            return array();
-        }
-    }
 }
-$kategori = new kategori();
+$login = new login();

@@ -37,6 +37,8 @@ if ($categories != false) {
             echo $ROUTE->view("blog-details", $blogdetails->push());
         } else if ($page == "kategori") {
             echo $ROUTE->view("kategori", $kategori->push());
+        } else if ($page == "giris") {
+            echo $ROUTE->view("login", $login->push());
         } else {
             echo $ROUTE->view("404", $notfound->push());
         }
