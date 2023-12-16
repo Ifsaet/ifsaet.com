@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . "/core.php";
-class girisyap
+class ifsaet
 {
     var $config;
     var $data = array();
@@ -11,7 +11,7 @@ class girisyap
     public function pageSeo()
     {
         $request = array();
-        $request["title"] = "Giriş Yap";
+        $request["title"] = "İfşa Et";
         $request["description"] = "İfşa et ile sosyal medya hesaplarınızı güvenli bir şekilde paylaşabilirsiniz.";
         $request["keywords"] = "ifşa et, ifşa, ifşa et";
         $request["canonical"] = "https://ifsaet.com/";
@@ -26,5 +26,8 @@ class girisyap
         $this->data["seo"] = $this->pageSeo();
         return $this->data;
     }
+    function __destruct()
+    {
+    }
 }
-$girisyap = new girisyap();
+$ifsaet = new ifsaet();

@@ -44,6 +44,7 @@
 }
 
 =======================================*/ @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 /* ==== 
  --------- (2.1) reset styles start ---------
@@ -69,7 +70,7 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 0;
   font-weight: 400;
@@ -291,7 +292,7 @@ h5>a,
 h6,
 h6>a {
   line-height: 1.2;
-  font-family: "Jost", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #222E48;
   letter-spacing: inherit;
 }
@@ -991,7 +992,7 @@ input[type=radio]:checked:before {
   display: flex;
   border: none;
   gap: 32px;
-  padding: 24px;
+  padding: 5px;
 }
 
 .card .card-body {
@@ -1051,7 +1052,6 @@ input[type=radio]:checked:before {
   z-index: 1;
   max-width: calc(100% - 20px);
   max-height: calc(100% - 20px);
-  background: rgba(7, 76, 62, 0.05);
   border-radius: 16px;
   width: 100%;
   height: 100%;
@@ -1236,7 +1236,7 @@ span.material-symbols-outlined {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #074C3E;
+  color: var(--secondary-color);
 }
 
 .section__header {
@@ -2383,7 +2383,7 @@ label.error {
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
   --bs-accordion-btn-icon-width: 1.75rem;
-  background: #074C3E;
+  background: var(--primary-color);
   color: white;
   border-radius: 50%;
   opacity: 1;
@@ -2400,7 +2400,7 @@ label.error {
   --arrow: "";
   font-family: "bootstrap-icons";
   font-weight: normal;
-  background: #FCB650;
+  background: var(--secondary-color);
 }
 
 .accordion .accordion-button:focus {
@@ -3696,7 +3696,7 @@ label.error {
 
 .footer a,
 .footer p {
-  color: #EBECEF;
+  color: #FF8541;
 }
 
 .footer a {
@@ -3784,7 +3784,7 @@ label.error {
 }
 
 .footer-secondary {
-  background: #074C3E;
+  background: #f1f1f1;
 }
 
 .footer-secondary::before,
@@ -3832,9 +3832,7 @@ label.error {
   color: #FCB650;
 }
 
-.footer-secondary .footer__copyright {
-  justify-content: center;
-}
+
 
 @media (max-width: 1399px) {
   .footer .footer__logo img {
@@ -4080,16 +4078,7 @@ label.error {
   position: relative;
 }
 
-.loan-reviews .loan-reviews_card .loan-reviews__part-two::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  border-left: 1px dashed #C1C4CC;
-  border-radius: 16px;
-}
+
 
 .loan-reviews .loan-reviews_card .loan-reviews__part-two::after {
   content: "";
@@ -4111,11 +4100,7 @@ label.error {
   color: #222E48;
 }
 
-.loan-reviews .loan-reviews_card .loan-reviews__part-two .reviews-heading {
-  border-bottom: 1px dashed #C1C4CC;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
-}
+
 
 .loan-reviews .loan-reviews_card .loan-reviews__part-two .reviews-inner ul {
   display: flex;
@@ -4224,8 +4209,7 @@ label.error {
   top: 0;
   left: 0;
   width: 100%;
-  height: 65%;
-  background: linear-gradient(90deg, #074C3E 0%, #FCB650 100%);
+
   opacity: 0.1000000015;
   z-index: -1;
 }
@@ -4237,7 +4221,6 @@ label.error {
   right: 32px;
   width: 221px;
   height: 417px;
-  background: url(../images/working_process.png) no-repeat;
   z-index: -1;
   animation: previewShapeY 3s linear infinite;
 }
@@ -4251,11 +4234,11 @@ label.error {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: transparent;
   position: relative;
   z-index: 0;
 }
@@ -4264,17 +4247,7 @@ label.error {
   max-width: calc(100% - 55px);
 }
 
-.working-process .card .card__icon::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 104px;
-  width: 104px;
-  min-width: 104px;
-  border-radius: 50%;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
-  border: 1px dashed #074C3E;
-}
+
 
 .working-process .card .card__icon .number-bullet {
   position: absolute;
@@ -4428,13 +4401,11 @@ label.error {
   left: 0;
   width: 100%;
   height: 60%;
-  background: linear-gradient(270deg, #074C3E 0%, #FCB650 100%);
   opacity: 0.1000000015;
   z-index: -1;
 }
 
 .testimonials .card--custom {
-  background: url(../images/quote.png) no-repeat;
   background-position: bottom 36px right 36px;
   background-color: #fff;
   align-items: start;
@@ -4753,10 +4724,8 @@ label.error {
   position: absolute;
   top: 0;
   height: 100%;
-  width: calc(100% - 320px);
-  background: linear-gradient(90deg, #074C3E 0%, #FCB650 100%);
-  border-radius: 16px;
-  opacity: 0.1000000015;
+  width: calc(100%);
+  background: var(--primary-color);
   z-index: -1;
 }
 
@@ -5118,7 +5087,7 @@ label.error {
 
 .contact .more-help {
   border-radius: 16px;
-  background: #FFF;
+  background: white;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
   padding: 32px;
   position: sticky;
@@ -5137,15 +5106,15 @@ label.error {
 }
 
 .contact .more-help .card--small .card--small-icon {
-  width: 84px;
-  min-width: 84px;
-  height: 84px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #DFE0E4;
-  background: #FFF;
+  background: white;
 }
 
 .contact .more-help .card--small .card--small-icon i {
@@ -6426,6 +6395,112 @@ label.error {
 .custom-input::placeholder {
   color: var(--secondary-color) !important;
   /* Rengi istediğiniz renkle değiştirin */
+}
+
+
+
+#ifsacard1,
+#ifsacard2,
+#ifsacard3 {
+  display: flex;
+  align-items: center;
+}
+
+#ifsacard1 .card--small-icon {
+  margin-right: 10px;
+}
+
+#ifsacard2 .card--small-icon {
+  margin-right: 10px;
+}
+
+#ifsaetsola:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Her bir kartın özel stilini burada tanımlayabilirsiniz */
+#ifsabaslik .btn_theme_active {
+  margin: 0 auto;
+  display: block;
+}
+
+#ifsamarka .btn_theme_active {
+  margin: 0 auto;
+  display: block;
+}
+
+#ifsamedya .btn_theme_active {
+  margin: 0 auto;
+  display: block;
+}
+
+
+#birliktecalisalimbuton {
+  color: #1F2130 !important;
+  box-shadow: none !important;
+}
+
+#birliktecalisalim2 {
+  background: transparent;
+  max-width: 250px !important;
+  box-shadow: none !important;
+}
+
+#birliktecalisalimbuton:hover {
+  background: var(--secondary-color);
+  border-radius: 30px !important;
+}
+
+#footeraltmetin {
+  margin-left: 15px;
+  color: #1F2130;
+}
+
+#footeraltmetin:hover {
+  color: var(--secondary-color);
+}
+
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+}
+
+#dropdownMenuButton {
+  background: var(--primary-color);
+}
+
+
+#hakkimizdacard {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  height: 250px;
+  box-shadow: 0 0 45px #0000001f;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  font-size: 16pt;
+  color: black;
+
+}
+
+#hakkimizdacard:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+#hakkimizdageniscard {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  height: 250px;
+  box-shadow: 0 0 45px #0000001f;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem;
+  font-size: large;
+  color: white;
+  background: var(--primary-color);
 }
 
 
