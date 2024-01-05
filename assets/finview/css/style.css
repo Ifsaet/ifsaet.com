@@ -1,54 +1,14 @@
 @charset "UTF-8";
 
-/* ==============
- ========= css documentation =========
-
- * Template Name: FINVIEW 
- * Version: 1.0
- * Author: pixelaxis
- * Author URI: https://themeforest.net/user/pixelaxis
- * Description: Financial Loan Review and Comparison Website Template
-
- 01. abstracts
-     1.1 --> mixins
-     1.2 --> variables
-
- 02. base
-     2.1 --> reset
-     2.2 --> typography
-     2.3 --> global
-
- 03. components
-     3.1 --> buttons
-     3.2 --> forms
-     3.3 --> preloader
-     3.4 --> faq-section
-     3.5 --> custom-animation
-
- 04. layout
-     4.1 --> header
-     4.2 --> banner
-     4.3 --> footer
-
- 05. sections
-
-
- 06. responsive
- ==== */
 :root {
   --primary-color: #00d9da;
-  /* Varsayılan renk */
   --secondary-color: #FF8541;
   --background-color: white;
-  /* Varsayılan arka plan rengi */
 }
 
-=======================================*/ @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-/* ==== 
- --------- (2.1) reset styles start ---------
- ==== */
 * {
   margin: 0px;
   padding: 0px;
@@ -790,7 +750,7 @@ img {
 .nice-select .option:hover,
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
-  background: #074C3E;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -1898,7 +1858,7 @@ a.conditions_apply::after {
 }
 
 .btn_bg_white i {
-  color: #074C3E;
+  color: var(--primary-color);
 }
 
 .btn_bg_white:hover,
@@ -1919,7 +1879,7 @@ a.conditions_apply::after {
   height: 45px;
   line-height: var(--body-line-height);
   border-radius: 5px;
-  background-color: #074C3E;
+  background-color: var(--primary-color);
   box-shadow: 0px 1px 13px rgba(7, 76, 62, 0.5);
   font-size: 20px;
   text-align: center;
@@ -5553,7 +5513,7 @@ label.error {
   width: 100%;
   height: 100%;
   opacity: 0.1000000015;
-  background: #074C3E;
+  background: white;
   z-index: -1;
   border-radius: 0;
 }
@@ -6503,8 +6463,20 @@ label.error {
   background: var(--primary-color);
 }
 
+#profilnavbar {
+  float: left !important;
+  margin-left: 20px !important;
+}
 
-/* ==== 
-  --------- (6.0) responsive styles end ---------
-  ==== */
-/*# sourceMappingURL=style.css.map */
+#profilnavbara {
+  margin-left: 20px !important;
+  color: rgba(30, 41, 59, 0.7) !important;
+}
+
+#profilnavbara:hover {
+  color: black !important;
+}
+
+#blogdetailresim {
+  width: 70% !important;
+}

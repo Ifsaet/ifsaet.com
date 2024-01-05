@@ -419,7 +419,7 @@
 
 
     <!-- Birlikte Çalışalım -->
-    <section class="loan-solution section mb-5">
+    <section class="loan-solution section">
         <div class="container position-relative ">
             <div class="row gy-5 gy-xl-0 justify-content-center justify-content-xxl-between align-items-center">
                 <div class="col-12 col-lg-8 col-xxl-8">
@@ -434,10 +434,9 @@
                             ifşalarının
                             arasında reklamınızın gösterilmesini sağlayın.</p>
                         <div class="sidebar cus_scrollbar wow fadeInUp" data-wow-duration="0.8s">
-
                             <div id="birliktecalisalim2" class="sidebar__part">
                                 <ul class="category">
-                                    <li><a id="birliktecalisalimbuton" href="#">
+                                    <li><a id="birliktecalisalimbuton" href="kurumsal-uyelik">
                                             <span class="caregory__content">Birlikte Çalışalım</span>
                                         </a></li>
                                 </ul>

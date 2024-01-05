@@ -52,7 +52,7 @@
                         </a>
                         <div class="collapse navbar-collapse ms-auto " id="navbar-content">
                             <div class="main-menu index-page">
-                                <ul class="navbar-nav mb-lg-0 d-flex align-items-center" style="">
+                                <ul class="navbar-nav mb-lg-0 d-flex align-items-center">
                                     <li class="nav-item">
                                         <a style="color: #212529 !important; font-size: 18px;" class="nav-link"
                                             href="loan-comparison.html">İfşalar</a>
@@ -62,14 +62,14 @@
                                             placeholder="Kurum/Marka Bul">
                                     </li>
                                 </ul>
-                                <ul class="navbar-nav mb-lg-0 ms-auto" style="">
+                                <ul class="navbar-nav mb-lg-0 ms-auto">
                                     <li class="nav-item">
                                         <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto"
-                                            href="loan-comparison.html">Kayıt Ol</a>
+                                            href="kayitol">Kayıt Ol</a>
                                     </li>
                                     <li class="nav-item">
                                         <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto"
-                                            href="loan-comparison.html">Giriş Yap</a>
+                                            href="giris">Giriş Yap</a>
                                     </li>
                                 </ul>
                                 <div class="nav-right d-none d-xl-block">
@@ -138,9 +138,9 @@
                         <div class="quick-link order-1 order-lg-0 text-center">
                             <ul class="quick-link__list">
                                 <li><a href="hakkimizda">Hakkımızda</a></li>
-                                <li><a href="">Kurumsal Üyelik</a></li>
+                                <li><a href="kurumsal-uyelik">Kurumsal Üyelik</a></li>
                                 <li><a href="blog">Blog</a></li>
-                                <li><a href="reklamcozumleri">Reklam Çözümleri</a></li>
+                                <li><a href="reklam-cozumleri">Reklam Çözümleri</a></li>
                                 <li><a href="sss">Sıkça Sorulan Sorular</a></li>
                                 <li><a href="iletisim">İletişim</a></li>
                             </ul>
