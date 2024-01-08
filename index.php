@@ -41,8 +41,6 @@ if ($categories != false) {
             echo $ROUTE->view("login", $login->push());
         } else if ($page == "marka") {
             echo $ROUTE->view("marka", $marka->push());
-        } else if ($page == "girisyap") {
-            echo $ROUTE->view("girisyap", $girisyap->push());
         } else if ($page == "maildogrulama") {
             echo $ROUTE->view("maildogrulama", $maildogrulama->push());
         } else {

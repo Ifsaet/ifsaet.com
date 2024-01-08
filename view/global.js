@@ -19,6 +19,9 @@ $(document).ready(function (){
     $('#kayitolbuton').click(function (){
         register();
     });
+    $('[name="dogrulamasend"]').click(function (){
+        mailControler();
+    });
 });
 function login() {
     $.ajax({
@@ -28,8 +31,6 @@ function login() {
         success: function (data)
         {
             var response = JSON.parse(data);
-            if(response.statu == "success")
-            {
                 setTimeout(function (){
                     Swal.fire({
                         title: response.title,
@@ -38,19 +39,11 @@ function login() {
                         confirmButtonText: "Tamam"
                     });
                 },1500);
-                setTimeout(function (){
-                    window.location.href = "index";
-                },3000);
-            }
-            else
-            {
-                Swal.fire({
-                    title: "Hata",
-                    text: "Tespit Edilemeyen Bir Hata Oluştu",
-                    icon: "error",
-                    confirmButtonText: "Tamam"
-                });
-            }
+                if(response.statu==="success") {
+                    setTimeout(function () {
+                        window.location.href = "index";
+                    }, 3000);
+                }
         }
     });
 }
@@ -63,8 +56,6 @@ function register(){
         {
             console.log(data);
             var response = JSON.parse(data);
-            if(response.statu == "success")
-            {
                 setTimeout(function (){
                     Swal.fire({
                         title: response.title,
@@ -73,19 +64,37 @@ function register(){
                         confirmButtonText: "Tamam"
                     });
                 },1500);
-                setTimeout(function (){
-                    window.location.href = "index";
-                },3000);
-            }
-            else
-            {
+               if(response.statu==="success"){
+                   setTimeout(function (){
+                       window.location.href="giris";
+                   },3000);
+               }
+        }
+    });
+}
+function mailControler()
+{
+    var mail = $('[name="dogrulamakodu"]').val();
+    $.ajax({
+        url: "hash/mailcontroller",
+        type: "POST",
+        data: $('#formcodcontrol').serialize(),
+        success: function (data)
+        {
+            console.log(data);
+            var response = JSON.parse(data);
+            setTimeout(function (){
                 Swal.fire({
-                    title: "Hata",
-                    text: "Tespit Edilemeyen Bir Hata Oluştu",
-                    icon: "error",
+                    title: response.title,
+                    text: response.text,
+                    icon: response.statu,
                     confirmButtonText: "Tamam"
                 });
-            }
+                if(response.statu==="success")
+                {
+                    window.location.href="giris";
+                }
+            },2000);
         }
     });
 }
