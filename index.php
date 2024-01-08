@@ -29,8 +29,6 @@ if ($categories != false) {
             echo $ROUTE->view("iletisim", $iletisim->push());
         } else if ($page == "sss") {
             echo $ROUTE->view("sss", $sss->push());
-        } else if ($page == "reklamcozumleri") {
-            echo $ROUTE->view("reklamcozumleri", $reklamcozumleri->push());
         } else if ($page == "blog") {
             echo $ROUTE->view("blog", $blog->push());
         } else if ($page == "blog-details") {
@@ -41,10 +39,26 @@ if ($categories != false) {
             echo $ROUTE->view("login", $login->push());
         } else if ($page == "marka") {
             echo $ROUTE->view("marka", $marka->push());
-        } else if ($page == "girisyap") {
-            echo $ROUTE->view("girisyap", $girisyap->push());
         } else if ($page == "maildogrulama") {
             echo $ROUTE->view("maildogrulama", $maildogrulama->push());
+        } else if ($page == "ifsaet") {
+            echo $ROUTE->view("ifsaet", $ifsaet->push());
+        } else if ($page == "profil") {
+            echo $ROUTE->view("profil", $profil->push());
+        } else if ($page == "ifsalarim") {
+            echo $ROUTE->view("ifsalarim", $ifsalarim->push());
+        } else if ($page == "kurumsal-uyelik") {
+            echo $ROUTE->view("kurumsal-uyelik", $kurumsaluyelik->push());
+        } else if ($page == "reklam-cozumleri") {
+            echo $ROUTE->view("reklam-cozumleri", $reklamcozumleri->push());
+        } else if ($page == "kurumsal-uye-kayit") {
+            echo $ROUTE->view("kurumsal-uye-kayit", $kurumsaluyekayit->push());
+        } else if ($page == "bireysel-iletisim") {
+            echo $ROUTE->view("bireysel-iletisim", $bireyseliletisim->push());
+        } else if ($page == "kurumsal-iletisim") {
+            echo $ROUTE->view("kurumsal-iletisim", $kurumsaliletisim->push());
+        } else if ($page == "kariyer-formu") {
+            echo $ROUTE->view("kariyer-formu", $kariyerformu->push());
         } else {
             echo $ROUTE->view("404", $notfound->push());
         }
