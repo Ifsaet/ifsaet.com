@@ -1,21 +1,22 @@
-<base href="http://verysoft/ifsa/">
+<base href="http://localhost/ifsa/">
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/finview/images/favicon.png" type="image/x-icon">
-        <title>{{$seo["title"]}}</title>
-        <meta name="keywords" content="{{$seo["keywords"]}}">
-        <meta name="description" content="{{$seo["description"]}}">
-        <link rel="canonical" href="{{$seo["canonical"]}}">
-        <meta name="robots" content="{{$seo["robots"]}}">
-        <meta property="og:title" content="{{$seo["title"]}}">
-        <meta property="og:description" content="{{$seo["description"]}}">
-        <meta property="og:image" content="{{$seo["image"]}}">
-        <meta property="og:url" content="{{$seo["canonical"]}}">
-        <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="assets/finview/images/favicon.png" type="image/x-icon">
+    <title>{{ $seo['title'] }}</title>
+    <meta name="keywords" content="{{ $seo['keywords'] }}">
+    <meta name="description" content="{{ $seo['description'] }}">
+    <link rel="canonical" href="{{ $seo['canonical'] }}">
+    <meta name="robots" content="{{ $seo['robots'] }}">
+    <meta property="og:title" content="{{ $seo['title'] }}">
+    <meta property="og:description" content="{{ $seo['description'] }}">
+    <meta property="og:image" content="{{ $seo['image'] }}">
+    <meta property="og:url" content="{{ $seo['canonical'] }}">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/finview/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/finview/vendor/nice-select/css/nice-select.css">
@@ -24,7 +25,8 @@
     <link rel="stylesheet" href="assets/finview/vendor/odometer/css/odometer.css">
     <link rel="stylesheet" href="assets/finview/vendor/animate/animate.css">
     <link rel="stylesheet" href="assets/finview/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
     <!-- SweetAlert JavaScript -->
@@ -32,6 +34,7 @@
     @yield('addHead')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 </head>
+
 <body>
 <div class="preloader">
     <span class="loader"></span>
@@ -77,18 +80,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav> 
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-body custom-nevbar">
             <div class="row">
                 <div class="col-md-7 col-xl-8">
                     <div class="custom-nevbar__left">
-                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
+                        <button type="button" class="close-icon d-md-none ms-auto" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">İfşa Et</a>
@@ -103,9 +106,9 @@
                                 <a class="menu_link" href="loan-comparison.html">İfşalar</a>
                             </li>
                             @php
-                            echo "<pre>";
+                                echo '<pre>';
                                 print_r($_SESSION);
-                             @endphp
+                            @endphp
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">Markalar</a>
                             </li>
@@ -115,7 +118,8 @@
                 <div class="col-md-5 col-xl-4">
                     <div class="custom-nevbar__right">
                         <div class="custom-nevbar__top d-none d-md-block">
-                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x"></i></button>
+                            <button type="button" class="close-icon ms-auto" data-bs-dismiss="offcanvas"
+                                aria-label="Close"><i class="bi bi-x"></i></button>
                             <div class="custom-nevbar__right-thumb mb-auto">
                                 <img src="assets/finview/images/logo.png" alt="logo">
                             </div>
@@ -125,42 +129,66 @@
             </div>
         </div>
     </div>
-@yield('content')
-<footer class="footer footer-secondary">
-    <div class="container">
-        <div class="row section">
-            <div class="col-12">
-                <div class="footer-secondary__content">
-                    <div class="footer__logo">
-                        <a href="index.html">
-                            <img src="assets/finview/images/logo.png" alt="Logo">
-                        </a>
+    @yield('content')
+    <footer class="footer footer-secondary">
+        <div class="container mt-3">
+            <div class="row section" style="margin-bottom: -50px !important; margin-top:-50px !important;">
+                <div class="col-12">
+                    <div class="footer-secondary__content d-flex justify-content-center">
+                        <div class="quick-link order-1 order-lg-0 text-center">
+                            <ul class="quick-link__list">
+                                <li><a href="hakkimizda">Hakkımızda</a></li>
+                                <li><a href="kurumsal-uyelik">Kurumsal Üyelik</a></li>
+                                <li><a href="blog">Blog</a></li>
+                                <li><a href="reklam-cozumleri">Reklam Çözümleri</a></li>
+                                <li><a href="sss">Sıkça Sorulan Sorular</a></li>
+                                <li><a href="iletisim">İletişim</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="quick-link order-1 order-lg-0">
-                        <ul class="quick-link__list">
-                            <li><a href="contact.html">Help & Support</a></li>
-                            <li><a href="loan-reviews.html">Privacy policy</a></li>
-                            <li><a href="loan-comparison.html">Terms & Conditions</a></li>
-                            <li><a href="contact.html">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="social">
-                        <a href="#" class="btn_theme social_box"><i class="bi bi-facebook"></i><span></span></a>
+                    <div class="social d-flex justify-content-center mt-4">
+                        <a href="#" class="btn_theme social_box"><i
+                                class="bi bi-facebook"></i><span></span></a>
                         <a href="#" class="btn_theme social_box"><i class="bi bi-twitter"></i><span></span></a>
-                        <a href="#" class="btn_theme social_box"><i class="bi bi-pinterest"></i><span></span></a>
-                        <a href="#" class="btn_theme social_box"><i class="bi bi-twitch"></i><span></span></a>
-                        <a href="#" class="btn_theme social_box"><i class="bi bi-skype"></i><span></span></a>
+                        <a href="#" class="btn_theme social_box"><i
+                                class="bi bi-instagram"></i><span></span></a>
+                        <a href="#" class="btn_theme social_box"><i class="bi bi-youtube"></i><span></span></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row" style="margin-top:-30px !important;">
+                <div class="col-12">
+                    <div class="footer__copyright">
+                        <p class="copyright text-start" style="color:#1f2130;">© İfşa Et Her Hakkı Saklıdır.</p>
+                        <p>
+                            <a id="footeraltmetin" href="gizlilik">Gizlilik</a>
+                            <a id="footeraltmetin" href="kullanim-sartlari">Kullanım
+                                Şartları</a>
+                            <a id="footeraltmetin" href="kkvk">KKVK</a>
+                        </p>
+                        <div class="dropup text-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Türkçe
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">İngilizce</a></li>
+                                <li><a class="dropdown-item" href="#">Rusça</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer__copyright justify-content-center">
+                        <img src="assets/finview/images/iyzico.png">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="footer__copyright">
-                    <p class="copyright text-center">Copyright © <span id="copyYear"></span> <a href="#" class="secondary_color">FINVIEW</a>. Designed By <a href="#" class="secondary_color">Pixelaxis</a></p>
-                </div>
-            </div>
-        </div>
+
     </div>
 </footer>
 <a href="#" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
@@ -179,6 +207,6 @@
 <script src="assets/finview/js/main.js"></script>
 <script src="view/global.js"></script>
 @yield('addFooter')
-
 </body>
+
 </html>

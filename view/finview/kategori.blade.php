@@ -1,34 +1,8 @@
 @extends('layout')
 @section('content')
-    <!-- Banner Start -->
-    <section class="banner">
-       <div class="container ">
-           <div class="row gy-4 gy-sm-0 align-items-center">
-               <div class="col-12 col-sm-6">
-                   <div class="banner__content">
-                       <h1 class="banner__title display-4 wow fadeInLeft" data-wow-duration="0.8s">service</h1> 
-                       <nav aria-label="breadcrumb">
-                           <ol class="breadcrumb wow fadeInRight" data-wow-duration="0.8s">
-                               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                               <li class="breadcrumb-item">pages</li>
-                               <li class="breadcrumb-item active" aria-current="page">service</li>
-                           </ol>
-                       </nav>
-                   </div>
-               </div>
-               <div class="col-12 col-sm-6">
-                   <div class="banner__thumb text-end">
-                       <img src="assets/finview/images/service_banner.png" alt="image">
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
-   <!-- Banner End -->
-   <!-- feature start -->
-   <section class="feature feature--tertiary section">
-       <div class="container">
-           <div class="row g-3 g-sm-2 g-md-3 g-xxl-4">
+<section class="feature feature--tertiary section mt-5">
+    <div class="container">
+        <div class="row g-3 g-sm-2 g-md-3 g-xxl-4">
                @unempty($kategori)
                     @php
                         $data = $kategori->getPaginatedData();
@@ -55,8 +29,8 @@
                @else
                        <div class="alert-success"><h1 class="text-center">Marka Bulunamadı</h1></div>
                @endif
-           </div>
-           <div class="row">
+        </div>
+        <div class="row">
                <div class="col-12">
                    <nav aria-label="Page navigation" class="nav_pagination" data-wow-duration="0.8s">
                        <ul class="pagination">
@@ -88,9 +62,8 @@
                        </ul>
                    </nav>
                </div>
-           </div>
-       </div>
-   </section>
-   <!-- feature end --> 
+        </div>
+    </div>
+</section>
 @endsection
 
