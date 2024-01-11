@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@appbaseio/searchbase": "^1.8.1",
+    "@appbaseio/searchbox": "^1.1.0-beta",
     "dropzone": "^6.0.0-beta.2"
   }
 }

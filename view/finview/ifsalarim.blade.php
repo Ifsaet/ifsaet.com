@@ -47,8 +47,8 @@
                                             stroke="#9399A1" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </g>
                                 </svg>İfşalarım</a>
-                            <a id="profilnavbara" href=""> <svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            <a id="profilnavbara" href="bildirimlerim"> <svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#9399A1" stroke="#9399A1">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -65,8 +65,8 @@
                                         </g>
                                     </g>
                                 </svg>Bildirimlerim</a>
-                            <a id="profilnavbara" href=""><svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a id="profilnavbara" href="bildirim-tercihlerim"><svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -76,8 +76,8 @@
                                             stroke-linejoin="round"></path>
                                     </g>
                                 </svg>Bildirim Tercihlerim</a>
-                            <a id="profilnavbara" href=""><svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a id="profilnavbara" href="kaydedilenler"><svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -103,25 +103,35 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-11 col-xl-9 col-xxl-8">
                     <div class="d-flex flex-column gap-4">
-                        <div class="loan-reviews_card card wow fadeInUp" data-wow-duration="0.8s">
-                            <div class="loan-reviews__part-one">
-                                <div class="loan-reviews__thumb">
-                                    <img src="assets/finview/images/loan_reviews_logo6.png" alt="image">
-                                </div>
+                        <div id="ifsalarimcard" class="card">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs justify-content-end my-2">
+                                    <li class="nav-item">
+                                        <a class="btn btn-danger" href="#">Sil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="btn btn-primary" style="margin-left: 10px;" href="#">Düzenle</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="loan-reviews__part-two">
-                                <div class="reviews-heading">
-                                    <h4 class="reviews-heading__title">İfşa Başlığı</h4>
-                                    <p class="reviews-heading__content">İfşa İçeriği</p>
-                                </div>
+                            <div class="card-body">
+                                <img src="assets/finview/images/testimonials2.png">
+                                <a class="link-primary" style="margin-left: 10px;" href="">Firma Adı</a>
+                                <h5 class="card-title mt-3">İfşa Başlığı</h5>
+                                <p class="card-text">İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği.
+                                    İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
+                                    İçeriği.</p>
                             </div>
-                            <div class="loan-reviews__part-three">
-                                <div class="btn-group">
-                                    <a href="#" class="btn_theme btn_theme_active">Sil<i
-                                            class="bi bi-archive"></i><span></span></a>
-                                    <a href="loan-reviews-details.html" class="btn_theme">Düzenle<i
-                                            class="bi bi-pencil"></i><span></span></a>
-                                </div>
+                        </div>
+                        <div id="ifsalarimcard" class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mt-3 text-center">İfşanız Bulunmamaktadır.</h5>
+                                <img class="mt-2" src="assets/finview/images/null.png">
                             </div>
                         </div>
                     </div>

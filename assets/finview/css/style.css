@@ -205,7 +205,7 @@ button {
 
 a:hover,
 button:hover {
-  color: #074C3E;
+  color: var(--secondary-color);
 }
 
 p,
@@ -2625,7 +2625,7 @@ label.error {
 }
 
 .index .navbar .navbar-toggler i {
-  color: #222E48;
+  color: white;
 }
 
 .header-section .navbar {
@@ -2891,8 +2891,7 @@ label.error {
   }
 
   .offcanvas {
-    background: url(../images/inner_banner.png);
-    background-color: gray;
+    background-color: #323350;
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -3178,8 +3177,7 @@ label.error {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1000000015;
-  background: var(--primary-color);
+  background: #323350;
   z-index: -1;
 }
 
@@ -3972,9 +3970,7 @@ label.error {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
-  background: linear-gradient(90deg, #074C3E 0%, #FCB650 100%);
-  border-radius: 16px;
+  background-color: #1F2130;
   z-index: -1;
 }
 
@@ -4232,8 +4228,6 @@ label.error {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, #074C3E 0%, #FCB650 100%);
-  opacity: 0.1000000015;
   z-index: -1;
 }
 
@@ -6479,4 +6473,143 @@ label.error {
 
 #blogdetailresim {
   width: 70% !important;
+}
+
+#ifsalarimcard {
+  border-style: solid;
+  border-width: 1px;
+  gap: 0px;
+  padding: 1rem;
+}
+
+
+@media only screen and (max-width: 1280px) {
+  #sliderkart {
+    display: none;
+    /* Kartları gizle */
+  }
+}
+
+
+.search-box {
+  position: relative;
+}
+
+.result-box {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.result-box.active {
+  display: block;
+}
+
+.result-box ul {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.result-box ul li {
+  color: var(--secondary-color);
+  list-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+
+}
+
+.result-box ul li:last-child {
+  border-bottom: none;
+}
+
+.result-box ul li:hover {
+  background-color: #DCDCDC;
+}
+
+#input-box::placeholder {
+  color: var(--secondary-color) !important;
+}
+
+#input-box {
+  color: var(--secondary-color) !important;
+}
+
+
+
+.search-box2 {
+  position: relative;
+}
+
+.result-box2 {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.result-box2.active {
+  display: block;
+}
+
+.result-box2 ul {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.result-box2 ul li {
+  color: var(--secondary-color);
+  list-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+}
+
+.result-box2 ul li:last-child {
+  border-bottom: none;
+}
+
+.result-box2 ul li:hover {
+  background-color: #DCDCDC;
+  font-size: 20px;
+}
+
+#input-box2::placeholder {
+  color: var(--secondary-color) !important;
+  font-size: 20px;
+}
+
+#input-box2 {
+  color: var(--secondary-color) !important;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+  #sliderh1 {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 1280px) {
+  #sliderikincidiv {
+    margin-top: 100px;
+  }
+}
+
+#gundemdekiifsalarsection {
+  background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
 }

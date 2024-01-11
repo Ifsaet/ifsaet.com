@@ -27,12 +27,16 @@
     <link rel="stylesheet" href="assets/finview/css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
-    <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
-    <!-- SweetAlert JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     @yield('addHead')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="assets/finview/js/autocomplete.js"></script>
 </head>
 
 <body>
@@ -54,27 +58,33 @@
                             <div class="main-menu index-page">
                                 <ul class="navbar-nav mb-lg-0 d-flex align-items-center">
                                     <li class="nav-item">
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link"
+                                        <a style="color: #00D9DA!important; font-size: 25px;" class="nav-link"
                                             href="loan-comparison.html">İfşalar</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <input class="form-control" style="width: 100%;" type="text"
-                                            placeholder="Kurum/Marka Bul">
+                                    <li class="nav-item" style="margin-left: 10px;">
+                                        <div class="search-box">
+                                            <div class="row">
+                                                <input autocomplete="off" id="input-box" class="form-control"
+                                                    style="width: 100%;" type="text" placeholder="Kurum/Marka Bul">
+                                            </div>
+                                            <div class="result-box">
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                                 <ul class="navbar-nav mb-lg-0 ms-auto">
                                     <li class="nav-item">
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto"
+                                        <a style="color: #FF8541 !important; font-size: 25px;" class="nav-link ml-auto"
                                             href="kayitol">Kayıt Ol</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto"
+                                        <a style="color: #FF8541 !important; font-size: 25px;" class="nav-link ml-auto"
                                             href="giris">Giriş Yap</a>
                                     </li>
                                 </ul>
                                 <div class="nav-right d-none d-xl-block">
                                     <div class="nav-right__search">
-                                        <a href="sign-in.html" class="btn_theme btn_theme_active headerbuton"><i
+                                        <a href="ifsaet" class="btn_theme btn_theme_active headerbuton"><i
                                                 class="bi bi-pencil"></i>İfşa Et<span></span></a>
                                     </div>
                                 </div>
@@ -94,21 +104,17 @@
                             aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">İfşa Et</a>
+                                <a class="menu_link" href="ifsaet">İfşa Et</a>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Kayıt Ol</a>
+                                <a class="menu_link" href="kayitol">Kayıt Ol</a>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Giriş Yap</a>
+                                <a class="menu_link" href="giris">Giriş Yap</a>
                             </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">İfşalar</a>
                             </li>
-                            @php
-                                echo '<pre>';
-                                print_r($_SESSION);
-                            @endphp
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">Markalar</a>
                             </li>

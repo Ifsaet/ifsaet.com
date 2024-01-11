@@ -59,6 +59,8 @@ if ($categories != false) {
             echo $ROUTE->view("kurumsal-iletisim", $kurumsaliletisim->push());
         } else if ($page == "kariyer-formu") {
             echo $ROUTE->view("kariyer-formu", $kariyerformu->push());
+        } else if ($page == "bildirimlerim") {
+            echo $ROUTE->view("bildirimlerim", $bildirimlerim->push());
         } else {
             echo $ROUTE->view("404", $notfound->push());
         }

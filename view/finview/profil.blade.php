@@ -1,7 +1,5 @@
 @extends('layout')
 @section('content')
-    @extends('layout')
-@section('content')
     <section class="banner">
         <div class="container ">
             <div class="row gy-4 gy-sm-0 align-items-center">
@@ -29,7 +27,7 @@
                                             stroke-linecap="round" stroke-linejoin="round"></path>
                                     </g>
                                 </svg>Profilim</a>
-                            <a id="profilnavbara" href=""><svg width="25px" height="25px" viewBox="0 -0.5 25 25"
+                            <a id="profilnavbara" href="ifsalarim"><svg width="25px" height="25px" viewBox="0 -0.5 25 25"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -49,8 +47,8 @@
                                             stroke="#9399A1" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </g>
                                 </svg>İfşalarım</a>
-                            <a id="profilnavbara" href=""> <svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            <a id="profilnavbara" href="bildirimlerim"> <svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="#9399A1" stroke="#9399A1">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -67,8 +65,8 @@
                                         </g>
                                     </g>
                                 </svg>Bildirimlerim</a>
-                            <a id="profilnavbara" href=""><svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a id="profilnavbara" href="bildirim-tercihlerim"><svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -78,8 +76,8 @@
                                             stroke-linejoin="round"></path>
                                     </g>
                                 </svg>Bildirim Tercihlerim</a>
-                            <a id="profilnavbara" href=""><svg width="25px" height="25px" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a id="profilnavbara" href="kaydedilenler"><svg width="25px" height="25px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -114,7 +112,7 @@
                                         <img width="100" src="assets/finview/images/blog10.png" alt="image">
                                         <input type="file" class="form-control" name="name" id="name">
                                         <input type="text" class="form-control" name="adsoyad" id="adsoyad"
-                                            placeholder="Ad Soyad">
+                                            placeholder="{{$item['name']}}">
                                         <input type="mail" class="form-control" name="email" id="email"
                                             placeholder="E-Posta Adresi">
                                         <input type="tel" class="form-control" name="tel" id="tel"
@@ -201,6 +199,4 @@
             </div>
         </div>
     </section>
-    <!-- Blog details end -->
-@endsection
 @endsection

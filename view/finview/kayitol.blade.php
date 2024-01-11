@@ -65,8 +65,6 @@
                         <button style="background-color: #EA4436 !important; border:#EA4436 !important;" type="button"
                             class="btn_theme mt_32">Google ile Kayıt Ol<i
                                 class="bi bi-arrow-up-right"></i><span></span></button>
-                        <span id="msg"></span>
-
                     </form>
                 </div>
                 <div class="col-12 col-sm-7 col-lg-5 col-xxl-5">

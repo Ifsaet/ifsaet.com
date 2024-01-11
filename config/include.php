@@ -25,6 +25,7 @@ require_once __DIR__ . "/../controller/pages/kurumsal-uye-kayit.php";
 require_once __DIR__ . "/../controller/pages/bireysel-iletisim.php";
 require_once __DIR__ . "/../controller/pages/kurumsal-iletisim.php";
 require_once __DIR__ . "/../controller/pages/kariyer-formu.php";
+require_once __DIR__ . "/../controller/pages/bildirimlerim.php";
 $ROUTE = new engine([
     'views' => __DIR__ . '/../view/finview',
     'cache' => __DIR__ . '/../storage/cache/finview',
