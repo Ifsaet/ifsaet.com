@@ -58,7 +58,7 @@
                             <div class="main-menu index-page">
                                 <ul class="navbar-nav mb-lg-0 d-flex align-items-center">
                                     <li class="nav-item">
-                                        <a style="color: #00D9DA!important; font-size: 25px;" class="nav-link"
+                                        <a style="color: #00D9DA!important; font-size: 22px;" class="nav-link"
                                             href="loan-comparison.html">İfşalar</a>
                                     </li>
                                     <li class="nav-item" style="margin-left: 10px;">
@@ -74,11 +74,11 @@
                                 </ul>
                                 <ul class="navbar-nav mb-lg-0 ms-auto">
                                     <li class="nav-item">
-                                        <a style="color: #FF8541 !important; font-size: 25px;" class="nav-link ml-auto"
+                                        <a style="color: #FF8541 !important; font-size: 22px;" class="nav-link ml-auto"
                                             href="kayitol">Kayıt Ol</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a style="color: #FF8541 !important; font-size: 25px;" class="nav-link ml-auto"
+                                        <a style="color: #FF8541 !important; font-size: 22px;" class="nav-link ml-auto"
                                             href="giris">Giriş Yap</a>
                                     </li>
                                 </ul>

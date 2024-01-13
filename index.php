@@ -61,6 +61,10 @@ if ($categories != false) {
             echo $ROUTE->view("kariyer-formu", $kariyerformu->push());
         } else if ($page == "bildirimlerim") {
             echo $ROUTE->view("bildirimlerim", $bildirimlerim->push());
+        } else if ($page == "bildirim-tercihlerim") {
+            echo $ROUTE->view("bildirim-tercihlerim", $bildirimtercihlerim->push());
+        } else if ($page == "kaydedilenler") {
+            echo $ROUTE->view("kaydedilenler", $kaydedilenler->push());
         } else {
             echo $ROUTE->view("404", $notfound->push());
         }

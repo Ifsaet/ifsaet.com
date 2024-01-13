@@ -872,7 +872,7 @@ input[type=radio]:checked:before {
   justify-content: center;
   border-radius: 32px;
   color: #222E48;
-  border: 1px solid #074C3E;
+  border: 1px solid #1F2130;
   font-size: 16px;
   font-weight: 600;
   transition: all 0.35s ease-in-out;
@@ -920,7 +920,7 @@ input[type=radio]:checked:before {
 .nav_pagination .page-item .page-link:hover,
 .nav_pagination .page-item .page-link:focus,
 .nav_pagination .page-item .page-link.active {
-  background-color: #074C3E;
+  background-color: #1F2130;
   color: white;
   box-shadow: none;
 }
@@ -3920,7 +3920,7 @@ label.error {
 }
 
 .feature .card:hover::after {
-  background: #074C3E;
+  background: var(--secondary-color);
 }
 
 .feature .card:hover .card__title a,
@@ -3933,11 +3933,11 @@ label.error {
 }
 
 .feature .card:hover .btn_theme {
-  border: 1px solid #FCB650;
+  border: 1px var(--primary-color);
 }
 
 .feature .card:hover .btn_theme:after {
-  background: #FCB650;
+  background: var(--primary-color);
 }
 
 .feature .card:hover .btn_theme:hover i {
@@ -5173,6 +5173,7 @@ label.error {
   display: flex;
   gap: 32px;
   flex-direction: column;
+  background-color: #fafafa;
 }
 
 .comments-area .comments-title .sort_by {
@@ -5218,7 +5219,7 @@ label.error {
 
 .comments-area .feedback__content a,
 .comments-area .feedback__content a i {
-  color: #074C3E !important;
+  color: #323350 !important;
   font-size: 18px;
 }
 
@@ -6612,4 +6613,14 @@ label.error {
 
 #gundemdekiifsalarsection {
   background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+}
+
+#markabaslik:hover {
+  color: white !important;
+}
+
+#alertbildirim {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

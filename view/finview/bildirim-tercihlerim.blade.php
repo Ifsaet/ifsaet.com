@@ -104,35 +104,32 @@
                 <div class="col-12 col-lg-11 col-xl-9 col-xxl-8">
                     <div class="d-flex flex-column gap-4">
                         <div id="ifsalarimcard" class="card">
-                            <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs justify-content-end my-2">
-                                    <li class="nav-item">
-                                        <a class="btn btn-danger" href="#">Sil</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="btn btn-primary" style="margin-left: 10px;" href="#">Düzenle</a>
-                                    </li>
-                                </ul>
+                            <div class="form-check">
+                                <label id="checkboxformlabel" class="form-check-label mt-1" for="flexCheckDefault">
+                                    İfşanızın markaya iletilmesi hakkında bilgilendirmeler
+                                </label>
+                                <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                             </div>
-                            <div class="card-body">
-                                <img src="assets/finview/images/testimonials2.png">
-                                <a class="link-primary" style="margin-left: 10px;" href="">Firma Adı</a>
-                                <h5 class="card-title mt-3"><a href="">İfşa Başlığı</a></h5>
-                                <p class="card-text">İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği.
-                                    İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
-                                    İçeriği.</p>
+                            <div class="form-check mt-1">
+                                <label id="checkboxformlabel" class="form-check-label mt-1" for="flexCheckDefault">
+                                    İfşanıza gelen cevap hakkında bilgilendirmeler
+                                </label>
+                                <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                             </div>
-                        </div>
-                        <div id="ifsalarimcard" class="card">
-                            <div class="card-body">
-                                <h5 class="card-title mt-3 text-center">İfşanız Bulunmamaktadır.</h5>
-                                <img class="mt-2" src="assets/finview/images/null.png">
+                            <div class="form-check mt-1">
+                                <label id="checkboxformlabel" class="form-check-label mt-1" for="flexCheckDefault">
+                                    İfşanıza yapılan yorumlar hakkında bilgilendirmeler
+                                </label>
+                                <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
                             </div>
+                            <div class="form-check mt-1">
+                                <label id="checkboxformlabel" class="form-check-label mt-1" for="flexCheckDefault">
+                                    Özel olarak gönderilen mesajlar hakkında bilgilendirmeler
+                                </label>
+                                <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                            </div>
+                            <button type="submit" class="btn_theme w-25 mt-3" style="height: 20px;" name="submit"
+                            id="submit">Kaydet<span></span></button>
                         </div>
                     </div>
                 </div>

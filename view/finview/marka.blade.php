@@ -1,7 +1,8 @@
  @extends('layout')
  @section('content')
     <section class="feature feature--tertiary section mt-5">
-        <div class="container">
+        <h1 class="text-center">Markalar</h1>
+        <div class="container mt-4">
             <div class="row g-3 g-sm-2 g-md-3 g-xxl-4">
                 @php
                     $data = $brand->getPaginatedData();
@@ -12,7 +13,7 @@
                         <div class="card card--custom wow fadeInUp" data-wow-duration="0.8s">
                                 <img src="assets/finview/images/testimonials.png" alt="">
                             <div class="card__content">
-                                <h4 class="card__title"><a href="{{$item["slug"]}}">{{$item["name"]}}</a></h4>
+                                <h4 class="card__title"><a id="markabaslik" href="{{$item["slug"]}}">{{$item["name"]}}</a></h4>
                                 <p class="fs-small">{{$item['aciklama']}}</p>
                                 <a href="{{$item["slug"]}}" class="btn_theme social_box"><i class="bi bi-arrow-up-right"></i><span></span></a>                            
                             </div>
