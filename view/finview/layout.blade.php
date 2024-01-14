@@ -27,12 +27,16 @@
     <link rel="stylesheet" href="assets/finview/css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous"></script>
-    <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
-    <!-- SweetAlert JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     @yield('addHead')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="assets/finview/js/autocomplete.js"></script>
 </head>
 
 <body>
@@ -70,6 +74,7 @@
                             @else
                                 <ul class="navbar-nav mb-lg-0 ms-auto" style="">
                                     <li class="nav-item">
+
                                         <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto" href="hesabim">{{mb_strtoupper($_SESSION["user"]["user"],"UTF-8")}}</a>
                                     </li>
                                 </ul>
@@ -94,21 +99,17 @@
                             aria-label="Close"><i class="bi bi-x"></i></button>
                         <ul class="custom-nevbar__nav mb-lg-0">
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">İfşa Et</a>
+                                <a class="menu_link" href="ifsaet">İfşa Et</a>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Kayıt Ol</a>
+                                <a class="menu_link" href="kayitol">Kayıt Ol</a>
                             </li>
                             <li class="menu_item">
-                                <a class="menu_link" href="loan-comparison.html">Giriş Yap</a>
+                                <a class="menu_link" href="giris">Giriş Yap</a>
                             </li>
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">İfşalar</a>
                             </li>
-                            @php
-                                echo '<pre>';
-                                print_r($_SESSION);
-                            @endphp
                             <li class="menu_item">
                                 <a class="menu_link" href="loan-comparison.html">Markalar</a>
                             </li>
