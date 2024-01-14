@@ -188,7 +188,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </footer>
 <a href="#" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
