@@ -104,19 +104,9 @@
                 <div class="col-12 col-lg-11 col-xl-9 col-xxl-8">
                     <div class="d-flex flex-column gap-4">
                         <div id="ifsalarimcard" class="card">
-                            <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs justify-content-end my-2">
-                                    <li class="nav-item">
-                                        <a class="btn btn-danger" href="#">Sil</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="btn btn-primary" style="margin-left: 10px;" href="#">Düzenle</a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="card-body">
                                 <img src="assets/finview/images/testimonials2.png">
-                                <a class="link-primary" style="margin-left: 10px;" href="">Firma Adı</a>
+                                <a class="link-primary disabled" style="margin-left: 10px;">Kişi Adı</a>
                                 <h5 class="card-title mt-3"><a href="">İfşa Başlığı</a></h5>
                                 <p class="card-text">İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği.
                                     İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa İçeriği. İfşa
@@ -130,7 +120,7 @@
                         </div>
                         <div id="ifsalarimcard" class="card">
                             <div class="card-body">
-                                <h5 class="card-title mt-3 text-center">İfşanız Bulunmamaktadır.</h5>
+                                <h5 class="card-title mt-3 text-center">Kaydettiğiniz İfşa Bulunmamaktadır.</h5>
                                 <img class="mt-2" src="assets/finview/images/null.png">
                             </div>
                         </div>
