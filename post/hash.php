@@ -33,4 +33,31 @@ switch ($hash)
                     echo json_encode(array("title"=>"Başarısız","text"=>"Güvenliğiniz için verilen token'in süresi doldu!","statu"=>"error"));
                 }
             break;
+    case 'mailcontroller':
+            $token = verifyToken('mailcontroller',@$_POST["mailcontroller"]);
+            if($token!=false)
+            {
+                require_once __DIR__."/../model/user.php";
+                $user = new USER();
+                $user->mailcontroller();
+            }
+            else
+            {
+                echo json_encode(array("title"=>"Başarısız","text"=>"Güvenliğiniz için verilen token'in süresi doldu!","statu"=>"error"));
+            }
+        break;
+    case 'ifsasaved':
+        $token = verifyToken('ifsaSaved',@$_POST["ifsaSaved"]);
+        if($token!=false)
+        {
+            require_once __DIR__."/../model/ifsa/add.php";
+            $add = new ADD();
+            $add->add();
+            echo $add->request;
+        }
+        else
+        {
+            echo json_encode(array("title"=>"Başarısız","text"=>"Güvenliğiniz için verilen token'in süresi doldu!","statu"=>"error"));
+        }
+        break;
 }

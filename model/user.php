@@ -15,7 +15,7 @@ class USER
         if(!empty($user)&&!empty($pass))
         {
             $_SESSION["user"]=array();
-            @$userCheck = $this->core->VeriGetir("user","user=? OR mail=? AND pass=?",array($this->core->guvenlik($user),$this->core->guvenlik($user),$this->core->guvenlik($pass)))[0];
+            @$userCheck = $this->core->VeriGetir("user","user=? OR mail=? AND pass=? AND statu=?",array($this->core->guvenlik($user),$this->core->guvenlik($user),$this->core->guvenlik($pass),1))[0];
             if($userCheck!=false)
             {
                 extract($userCheck);
@@ -38,13 +38,15 @@ class USER
         extract($_POST);
         if(!empty($user)&&!empty($pass)&&!empty($mail)||!empty($phone))
         {
-            $this->mail = new MAIL($mail,"KAYIT ONAYI","Kayıt Onayı İçin Tıklayınız : Kodu buraya yazın");
+            $token = substr(md5(md5($this->core->random())),0,20);
+            $this->mail = new MAIL($mail,"KAYIT ONAYI","Kayıt Onayı İçin Tıklayınız :http://verysoft/ifsa/maildogrulama?c=".$token);
             @$userCheck = $this->core->VeriGetir("user","user=? OR mail=? OR phone=?",array($this->core->guvenlik($user),$this->core->guvenlik($mail),$this->core->guvenlik($phone)),"ORDER BY id DESC",1)[0];
             if($userCheck==false)
             {
-                $insert = $this->core->SorguCalistir("INSERT INTO user"," SET name=?,user=?,pass=?,mail=?,phone=?,statu=?",array($this->core->guvenlik($name),$this->core->guvenlik($user),$this->core->guvenlik($pass),$this->core->guvenlik($mail),$this->core->guvenlik($phone),2));
+                $insert = $this->core->SorguCalistir("INSERT INTO user"," SET name=?,user=?,token=?,pass=?,mail=?,phone=?,statu=?",array($this->core->guvenlik($name),$this->core->guvenlik($user),$token,$this->core->guvenlik($pass),$this->core->guvenlik($mail),$this->core->guvenlik($phone),2));
                 if($insert!=false)
                 {
+                    $_SESSION["user"]["token"] = $token;
                     $this->mail->sendMail();
                     echo json_encode(array("title"=>"Başarılı","text"=>"Kayıt Başarılı !","statu"=>"success"));
                 }
@@ -55,12 +57,47 @@ class USER
             }
             else
             {
-                echo json_encode(array("title"=>"Başarısız","text"=>"Kullanıcı Adı veya Şifre Kullanılıyor !","statu"=>"error"));
+                echo json_encode(array("title"=>"Başarısız","text"=>"Kullanıcı Adı, Mail Adresi yada Telefon Numarası Kullanılıyor !","statu"=>"error"));
             }
         }
         else
         {
             echo json_encode(array("title"=>"Başarısız","text"=>"Boş Alan Bırakmayınız !","statu"=>"error"));
+        }
+    }
+    public function mailcontroller()
+    {
+        extract($_POST);
+        if(!empty($dogrulamakodu))
+        {
+            @$userCheck = $this->core->VeriGetir("user","token=?",array($this->core->guvenlik($dogrulamakodu)),"ORDER BY id DESC",1)[0];
+            if($userCheck!=false)
+            {
+                if($dogrulamakodu==@$_SESSION["user"]["token"])
+                {
+                    $guncelle = $this->core->SorguCalistir("UPDATE user"," SET statu=?,token=? WHERE token=?",array(1,"",$this->core->guvenlik($dogrulamakodu)),"1");
+                    if($guncelle!=false)
+                    {
+                        echo json_encode(array("title"=>"Başarılı","text"=>"Mail Başarılı Bir Şekilde Doğrulandı !","statu"=>"success"));
+                    }
+                    else
+                    {
+                        echo json_encode(array("title"=>"Başarılı","text"=>"Mail Doğrulaması Başarısız!","statu"=>"error"));
+                    }
+                }
+                else
+                {
+                    echo json_encode(array("title"=>"Başarısız","text"=>"Mail Doğrulamasının Kayıt Olduğunuz Bilgisayardan Yapmanız Gerekmektedir !","statu"=>"error"));
+                }
+            }
+            else
+            {
+                echo json_encode(array("title"=>"Başarısız","text"=>"Mail Adresi Doğrulanamıyor !","statu"=>"error"));
+            }
+        }
+        else
+        {
+            echo json_encode(array("title"=>"Başarısız","text"=>"Doğrulama Kodu Boş Bırakılamaz !","statu"=>"error"));
         }
     }
 }

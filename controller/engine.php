@@ -152,7 +152,7 @@ class engine
     {
         $this->view = preg_replace_callback('/@include\(\'(.*?)\'\)/', function ($viewName) {
             return file_get_contents($this->config["views"] . '/' . $this->parsViewName($viewName[1]));
-            //var_dump($this->parsViewName($viewName[1]));
+            $this->parseSections();
         }, $this->view);
     }
     public function parseToken()
