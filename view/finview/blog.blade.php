@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <section class="blog section">
+    <section class="blog section mt-5">
         <h1 class="text-center mt-5">Yazılar</h1>
         <div class="container mt-5">
             <div class="row gy-5 gy-lg-0">

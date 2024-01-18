@@ -2,5 +2,5 @@
 define("HOST", "localhost");
 define("USER", "root");
 define("PASSWORD", "");
-define("DBNAME", "ifsa");
+define("DBNAME", "ifsaet");
 define("DEV_MODE", true);

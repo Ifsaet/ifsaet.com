@@ -1,7 +1,7 @@
  @extends('layout')
  @section('content')
     <section class="feature feature--tertiary section mt-5">
-        <h1 class="text-center">Markalar</h1>
+        <h1 class="text-center mt-5">Markalar</h1>
         <div class="container mt-4">
             <div class="row g-3 g-sm-2 g-md-3 g-xxl-4">
                 @php

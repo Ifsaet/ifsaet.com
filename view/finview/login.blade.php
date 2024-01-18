@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-    <section class="sign-up section">
+    <section class="sign-up section mt-5">
         <div class="container mt-5">
             <div class="row gy-5 gy-xl-0 justify-content-center justify-content-lg-between align-items-center">
                 <div class="col-12 col-lg-7 col-xxl-6">
@@ -10,7 +10,7 @@
                         <div class="sign-up__form-part mt-5">
                             <div class="input-single">
                                 <input type="email" class="form-control" name="user" id="user"
-                                    placeholder="E-Posta Adresinizi Girin">
+                                    placeholder="E-Posta Adresi veya Kullanıcı Adınızı Girin">
                             </div>
                             <div class="input-single">
                                 <div class="input-pass">

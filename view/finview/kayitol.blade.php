@@ -3,7 +3,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 @endsection
 @section('content')
-    <section class="sign-up section">
+    <section class="sign-up section mt-5">
         <div class="container mt-5">
             <div class="row gy-5 gy-xl-0 justify-content-center justify-content-lg-between align-items-center">
                 <div class="col-12 col-lg-7 col-xxl-6">

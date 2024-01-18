@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <section class="sign-up contact section mt-5">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row gy-5 gy-xl-0 justify-content-center">
                 <div class="col-8 col-lg-8 col-xxl-8">
                     <form method="POST" autocomplete="off" class="sign-up__form wow fadeInDown"

@@ -1,12 +1,12 @@
 @extends('layout')
 @section('content')
     <section class="blog-details section mt-5">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row gy-4 gy-lg-0">
                 <div class="col-12 col-lg-12 col-xl-12">
                     <div class="gap-4 flex-column">
                         <div class="card card--secondary">
-                            <div class="card--secondary__thumb wow fadeInUp text-center" data-wow-duration="0.8s">
+                            <div class="card--secondary__thumb wow fadeInUp text-center mt-5" data-wow-duration="0.8s">
                                 <img id="blogdetailresim" src="assets/finview/images/blog_details.png" alt="image">
                             </div>
                             <div class="card--secondary__content">

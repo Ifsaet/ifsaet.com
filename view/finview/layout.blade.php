@@ -40,51 +40,66 @@
 </head>
 
 <body>
-<div class="preloader">
-    <span class="loader"></span>
-</div>
-<header class="header-section index ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-xl nav-shadow" id="navbar">
-                    <a class="navbar-brand" href="index"><img width="200" src="assets/finview/images/logo.png" class="logo" alt="logo"></a>
-                    <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <i class="bi bi-list"></i>
-                    </a>
-                    <div class="collapse navbar-collapse ms-auto " id="navbar-content">
-                        <div class="main-menu index-page">
-                            <ul class="navbar-nav mb-lg-0 d-flex align-items-center" style="">
-                                <li class="nav-item">
-                                    <a style="color: #212529 !important; font-size: 18px;" class="nav-link" href="loan-comparison.html">İfşalar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <input class="form-control" style="width: 100%;" type="text" placeholder="Kurum/Marka Bul">
-                                </li>
-                            </ul>
-                            @empty($_SESSION["user"]["user"])
-                                <ul class="navbar-nav mb-lg-0 ms-auto" style="">
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
+    <header class="header-section index ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl nav-shadow" id="navbar">
+                        <a class="navbar-brand" href="index"><img width="200" src="assets/finview/images/logo.png"
+                                class="logo" alt="logo"></a>
+                        <a class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">
+                            <i class="bi bi-list"></i>
+                        </a>
+                        <div class="collapse navbar-collapse ms-auto " id="navbar-content">
+                            <div class="main-menu index-page">
+                                <ul class="navbar-nav mb-lg-0 d-flex align-items-center" style="">
                                     <li class="nav-item">
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto" href="loan-comparison.html">Kayıt Ol</a>
+                                        <a style="color: white !important; font-size: 20px;" class="nav-link"
+                                            href="">İfşalar</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto" href="loan-comparison.html">Giriş Yap</a>
+                                        <div class="search-box">
+                                            <div class="row">
+                                                <input autocomplete="off" id="input-box" class="form-control"
+                                                    style=" margin-left:10px;" type="text"
+                                                    placeholder="Kurum/Marka Bul">
+                                            </div>
+                                            <div class="result-box">
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
-                            @else
-                                <ul class="navbar-nav mb-lg-0 ms-auto" style="">
-                                    <li class="nav-item">
+                                @empty($_SESSION['user']['user'])
+                                    <ul class="navbar-nav mb-lg-0 ms-auto" style="">
+                                        <li class="nav-item">
+                                            <a style="color: white !important; font-size: 20px;" class="nav-link ml-auto"
+                                                href="kayitol">Kayıt Ol</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a style="color: white !important; font-size: 20px;" class="nav-link ml-auto"
+                                                href="giris">Giriş Yap</a>
+                                        </li>
+                                    </ul>
+                                @else
+                                    <ul class="navbar-nav mb-lg-0 ms-auto" style="">
+                                        <li class="nav-item">
 
-                                        <a style="color: #212529 !important; font-size: 18px;" class="nav-link ml-auto" href="hesabim">{{mb_strtoupper($_SESSION["user"]["user"],"UTF-8")}}</a>
-                                    </li>
-                                </ul>
-                            @endempty
-                            <div class="nav-right d-none d-xl-block">
-                                <div class="nav-right__search">
-                                    <a href="sign-in.html" class="btn_theme btn_theme_active headerbuton"><i class="bi bi-pencil"></i>İfşa Et<span></span></a>
+                                            <a style="color: white !important; font-size: 20px;" class="nav-link ml-auto"
+                                                href="hesabim">{{ mb_strtoupper($_SESSION['user']['user'], 'UTF-8') }}</a>
+                                        </li>
+                                    </ul>
+                                @endempty
+                                <div class="nav-right d-none d-xl-block">
+                                    <div class="nav-right__search">
+                                        <a href="sign-in.html" class="btn_theme btn_theme_active headerbuton"><i
+                                                class="bi bi-pencil"></i>İfşa Et<span></span></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </nav>
                 </div>
             </div>
@@ -189,24 +204,24 @@
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<a href="#" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
-<script src="assets/finview/vendor/jquery/jquery-3.6.3.min.js"></script>
-<script src="assets/finview/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/finview/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="assets/finview/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
-<script src="assets/finview/vendor/slick/js/slick.min.js"></script>
-<script src="assets/finview/vendor/odometer/js/odometer.min.js"></script>
-<script src="assets/finview/vendor/viewport/viewport.jquery.js"></script>
-<script src="assets/finview/vendor/jquery-ui/jquery-ui.min.js"></script>
-<script src="assets/finview/vendor/wow/wow.min.js"></script>
-<script src="assets/finview/vendor/jquery-validate/jquery.validate.min.js"></script>
-<script src="assets/finview/js/plugins.js"></script>
-<script src="assets/finview/js/main.js"></script>
-<script src="view/global.js"></script>
-@yield('addFooter')
+        </div>
+    </footer>
+    <a href="#" class="scrollToTop"><i class="bi bi-chevron-double-up"></i></a>
+    <script src="assets/finview/vendor/jquery/jquery-3.6.3.min.js"></script>
+    <script src="assets/finview/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/finview/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/finview/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
+    <script src="assets/finview/vendor/slick/js/slick.min.js"></script>
+    <script src="assets/finview/vendor/odometer/js/odometer.min.js"></script>
+    <script src="assets/finview/vendor/viewport/viewport.jquery.js"></script>
+    <script src="assets/finview/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/finview/vendor/wow/wow.min.js"></script>
+    <script src="assets/finview/vendor/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/finview/js/plugins.js"></script>
+    <script src="assets/finview/js/main.js"></script>
+    <script src="view/global.js"></script>
+    @yield('addFooter')
 </body>
 
 </html>

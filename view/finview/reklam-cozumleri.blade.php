@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <section class="testimonials section mt-5">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-12 col-xxl-12">
                     <div class="section__header">

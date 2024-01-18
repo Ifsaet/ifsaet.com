@@ -1121,7 +1121,7 @@ input[type=radio]:checked:before {
 }
 
 .read_more {
-  color: #074C3E;
+  color: #222E48;
   font-weight: 600;
 }
 
@@ -2617,6 +2617,7 @@ label.error {
  --------- (4.1) header styles start ---------
  ==== */
 .header-section {
+  background-color: #323350;
   position: absolute;
   top: 0;
   left: 0;
@@ -2792,7 +2793,7 @@ label.error {
 }
 
 .index.header-active {
-  background: white;
+  background: #323350;
 }
 
 @media (max-width: 1599px) {
@@ -3356,7 +3357,7 @@ label.error {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #E5FBFB;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
@@ -5507,8 +5508,7 @@ label.error {
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1000000015;
-  background: white;
+  background: #F8FAFC;
   z-index: -1;
   border-radius: 0;
 }

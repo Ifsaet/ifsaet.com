@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <section class="section faq-section wow fadeInUp mt-5" data-wow-duration="0.8s" id="faqa">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-7 col-xxl-6">
                     <div class="section__header">

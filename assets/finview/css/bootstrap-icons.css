@@ -8,6 +8,7 @@
   font-family: "bootstrap-icons";
   src: url("./fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff2"), url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff");
 }
+
 .bi::before,
 [class^=bi-]::before,
 [class*=" bi-"]::before {
@@ -7833,4 +7834,6 @@
 
 .bi-wikipedia::before {
   content: "\f8cc";
-}/*# sourceMappingURL=bootstrap-icons.css.map */
+}
+
+/*# sourceMappingURL=bootstrap-icons.css.map */

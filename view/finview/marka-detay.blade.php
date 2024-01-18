@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
         <section class="service-details section mt-5">
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row gy-4 gy-lg-0">
                     <div class="col-12 col-lg-12">
                         <div class="card card--secondary wow fadeInDown" data-wow-duration="0.8s">

@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
     <section class="calculator section mt-5" id="calculator">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row gy-5 gy-xl-0 justify-content-center align-items-center">
                 <div class="col-7 col-lg-7">
                     <div class="section__content ms-lg-12 ms-xxl-0">
